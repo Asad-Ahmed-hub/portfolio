@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth font-myfont;
+  }
+}
+
+@layer components {
+  .primary-bg {
+    @apply bg-black
+  }
+
+  .card-bg {
+    @apply bg-[#101010];
+  }
+}
