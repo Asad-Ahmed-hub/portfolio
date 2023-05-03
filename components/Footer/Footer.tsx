@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full md:col-span-2 lg:col-span-3 border-t-2 border-gray-500 flex flex-row items-center justify-center  space-x-2 pt-4 ">
-        <p className="text-white text-center text-xl font-bold">Designde By <Link href={"https://www.linkedin.com/in/asad-ahmed1/"} title={"Linkedin"}>Asad Ahmed</Link></p>
+        <p className="text-white text-center text-xl font-bold">Designde By <Link href={"https://www.linkedin.com/in/asad-ahmed1/"} title={"Linkedin"} className="border-b-[1px] border-white">Asad Ahmed</Link></p>
       </div>
     </footer>
   );

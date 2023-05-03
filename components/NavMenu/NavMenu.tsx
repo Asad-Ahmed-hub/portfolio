@@ -20,10 +20,6 @@ import { fadeIn } from "../utils/motion";
 
 const NavMenu = () => {
   //get url
-  const pathname = usePathname();
-  const router = useRouter();
-  const params = useSearchParams();
-  console.log(params)
 
   const [mobiletoogle, setMobileToogle] = useState<boolean>(false);
   const [desktoptoogle, setDesktopToogle] = useState<boolean>(false);
@@ -84,11 +80,10 @@ const NavMenu = () => {
                     onClick={handleNavigation}
                   >
                     <motion.li
-                    whileHover={{ scale: 1.1, borderBottom: 2,  }}
+                    whileHover={{ scale: 1.1,  }}
                       key={item.id}
                       className={`lg:text-lg xl:text-lg 2xl:text-lg font-bold mx-1 ${
-                        item.url.includes(pathname) ? "hover:border-b-2 hover:border-white transition-all  translate-x-2 " : ""
-                      }`}
+                        "hover:border-b-2 hover:border-b-white transition-all  transform-x "}`}
                     >
                       {item.title}
                     </motion.li>
@@ -146,7 +141,7 @@ const NavMenu = () => {
                   <li
                     key={item.id}
                     className={`p-3 hover:rounded-lg  lg:text-lg xl:text-lg 2xl:text-lg font-bold mx-1 ${
-                      item.url === pathname ? "border-b-2 border-white" : "hover:border-b-2 transition-all  translate-x-2 "
+                       "hover:border-b-2 transition-all  translate-x-2 border-white"
                     }`}
                   >
                     {item.title}
