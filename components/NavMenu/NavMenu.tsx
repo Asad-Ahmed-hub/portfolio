@@ -82,7 +82,7 @@ const NavMenu = () => {
                     <motion.li
                     whileHover={{ scale: 1.1,  }}
                       key={item.id}
-                      className={`lg:text-lg xl:text-lg 2xl:text-lg font-bold mx-1 ${
+                      className={`text-[16px] font-bold mx-1 ${
                         "hover:border-b-2 hover:border-b-white transition-all  transform-x "}`}
                     >
                       {item.title}

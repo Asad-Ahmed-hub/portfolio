@@ -79,7 +79,7 @@ const ContactForm = () => {
          }}
        >
         {({errors, touched, isSubmitting}) => (
-                   <Form className="card-bg p-10">
+                   <Form className="card-bg p-2 md:p-10">
                    <div className="flex flex-col md:flex-row justify-center items-center w-full">
                    <div className="w-full md:1/2 mx-2">
                    <label

@@ -31,7 +31,7 @@ const Progress = () => {
           variants={fadeIn("up", "spring",1 * 0.25, 0.75)}
           initial="hidden"
           whileInView="show"
-          className="w-full ">
+          className="w-full order-first lg:order-last">
             <Image src='/progress-image.webp' alt='software' width={500} height={500} className=' mx-auto' />
           </motion.div>
     </section>
