@@ -11,7 +11,9 @@ import { MdEmail } from "react-icons/md";
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
 import { SiGithub } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
-
+import {motion} from 'framer-motion'
+import Typewriter from "typewriter-effect";
+import { fadeIn } from "../utils/motion";
 const Footer = () => {
 
   return (
@@ -20,9 +22,14 @@ const Footer = () => {
       <Link href={"/"} title="Asad Ahmed">
             <h1 className="text-white  text-3xl font-bold">Asad Ahmed</h1>
       </Link>
-      <p className="text-white text-xl">
-              I am a Full-Stack developer and technology consultant for startups and enterprises with 3+ years of experience in software product development.
-              </p>
+      <motion.p
+          variants={fadeIn("up", "spring",1 * 1, 0.90)}
+          initial="hidden"
+          whileInView="show"
+          className="text-xl text-white text-justify mt-4">
+          Full Stack Developer- NextJS 13.4 | ReactJS | React Native | NextJS | Redux Toolkit |
+          NodeJS | Shopify | Wordpress | Woocommerce | JavaScript | TypeScript 
+          </motion.p>
       </div>
 
       <div className="justify-self-start">
@@ -54,7 +61,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="  text-[20px] text-whitetext-center  font-bold hover:border-b-2 hover:border-white">
-              <Link href="tel:+92-320210366">+92-320210366</Link> 
+              <Link href="tel:+92-3072884889">+92-3072884889</Link> 
               </p>
             </div>
           </div>
@@ -64,7 +71,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="  text-[20px] text-white text-center  font-bold hover:border-b-2 hover:border-white">
-              <Link href="https://wa.me/923200210366">+92-320210366</Link>
+              <Link href="https://wa.me/923072884889">+92-3072884889</Link>
               </p>
             </div>
           </div>

@@ -6,6 +6,9 @@ import { FiArrowUpRight } from "react-icons/fi";
 import {motion} from 'framer-motion'
 import Typewriter from "typewriter-effect";
 import { fadeIn } from "../utils/motion";
+import { BsFacebook } from "react-icons/bs";
+import { SiGithub, SiLinkedin,SiShopify,SiWordpress,SiTypescript } from "react-icons/si";
+import { TbBrandNextjs, TbBrandReactNative,TbBrandJavascript } from "react-icons/tb";
 
 const Banner = () => {
   return (
@@ -45,7 +48,40 @@ const Banner = () => {
             I create and maintain modern websites and applications. I solve all
             your business problems.
           </motion.p>
-          <motion.div
+
+        </div>
+        <motion.p
+          variants={fadeIn("up", "spring",1 * 1, 0.80)}
+          initial="hidden"
+          whileInView="show"
+          className="text-2xl text-white text-center font-bold mt-6 min-w-max">
+            My Stack
+          </motion.p>
+        <div 
+          className="flex flex-row justify-start gap-4  items-center mt-2 min-w-max">
+          <Link
+            href={"#"}
+            title={"facebook"}
+          >
+            <TbBrandNextjs size={40} className="text-white hover:text-white"/>
+          </Link>
+          <Link href={"#"} title={"github"}>
+          <TbBrandReactNative size={40}  className="text-[#61DAFB] hover:text-[#61DAFB]"/>
+          </Link>
+          <Link href={"#"} title={"Linkedin"}>
+          <TbBrandJavascript size={40}  className="text-[#EFD81C] hover:text-[#EFD81C]  "/>
+          </Link>
+          <Link href={"#"} title={"Linkedin"}>
+          <SiTypescript size={40}  className="text-[#2F74C0] hover:text-[#2F74C0]  "/>
+          </Link>
+          <Link href={"#"} title={"Linkedin"}>
+          <SiShopify size={40}  className="text-[#91B947] hover:text-[#91B947]  "/>
+          </Link>
+          <Link href={"#"} title={"Linkedin"}>
+          <SiWordpress size={40}  className="text-[#207196] hover:text-[#207196] "/>
+          </Link>
+        </div>
+        <motion.div
           variants={fadeIn("up", "spring",1 * 1.25, 0.75)}
           initial="hidden"
           whileInView="show"
@@ -57,7 +93,6 @@ const Banner = () => {
               </span>
             </Link>
           </motion.div>
-        </div>
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ export const menu:Menu[] =
     },
     {
         id: 4,
-        title: "Contact Us",
+        title: "Contact Me",
         url: "/#contact-us"
     }
 ];
@@ -29,24 +29,75 @@ export const menu:Menu[] =
 export const projects:Project[] = [
     {
         id: 1,
-        title: "Paramountbooks",
-        image: "/paramountbooks.png",
-        description: "Paramount Books aspires to enhance the productivity and growth of organizations around the world by providing a comprehensive range of innovative publications in the school, higher education, medical, management, digital resources and children activity",
-        link: "https://paramountbooks.com.pk/"
+        title: "Panaverse Dao",
+        image: "/panaversedao.png",
+        description: "This curriculum is intended for beginners who want to learn software development...",
+        stack: "Next JS 13.4",
+        link: "https://asad-panaverse-dao.vercel.app/"
     },
     {
         id: 2,
-        title: "Emkaylines",
-        image: "/emkayline.png",
-        description: "Over the past three decades, the group has created a specific niche for itself in the shipping industry by committing to customer quality standards and by exhibiting adamant efficiency in all facets of its service operations across many parts of the globe.",
-        link: "https://emkayline.com/"
+        title: "Naeem's Virtual Academy (LMS)",
+        image: "/naeemvirtualacademy.png",
+        description: "Naeem's Virtual Academy is an LMS app owned by Sir Naeemullah Mahar...",
+        stack: "React Native",
+        link: "https://play.google.com/store/apps/details?id=co.qsoft.nva&hl=en&gl=US"
     },
     {
         id: 3,
+        title: "Humayunalamgir",
+        image: "/humayunalamgir.png",
+        description: "Humayun Alamgir Menswear is dedicated to providing high-quality...",
+        stack: "Shopify",
+        link: "https://humayunalamgir.com/"
+    },
+    {
+        id: 4,
+        title: "Amir Khan Couture",
+        image: "/amirkhancouture.png",
+        description: "Amir Khan couture is a fashion label from Pakistan, started in 2014...",
+        stack: "Shopify",
+        link: "https://www.amirkhancouture.com/"
+    },
+    {
+        id: 5,
+        title: "Top Notch",
+        image: "/topnch.png",
+        description: "Top Notch Accounting and Bookkeeping represents a group of hardworking...",
+        stack: "Wordpress",
+        link: "https://topnch.com/"
+    },
+    {
+        id: 6,
+        title: "Paramountbooks",
+        image: "/paramountbooks.png",
+        description: "Paramount Books aspires to enhance the productivity and growth of organizations...",
+        stack: "Wordpress | Woocommerce",
+        link: "https://paramountbooks.com.pk/"
+    },
+    {
+        id: 7,
+        title: "Emkaylines",
+        image: "/emkayline.png",
+        description: "Over the past three decades, the group has created a specific niche for itself in the shipping industry...",
+        stack: "Wordpress",
+        link: "https://emkayline.com/"
+    },
+    {
+        id: 8,
         title: "Pac Marine",
         image: "/pacmarine.png",
-        description: "PacMarine Services is a marine and tanker consultancy and surveying firm, offering consultancy services primarily to Oil Majors, Charterers, Shipowners, P&I clubs, Underwriters, Lawyers, Loss Adjusters and the Chemical Distribution Institute (CDI).",
+        stack: "Wordpress ",
+        description: "PacMarine Services is a marine and tanker consultancy and surveying firm, offering consultancy...",
         link: "https://www.pacmarine.com/"
+    },
+    {
+        id: 9,
+        title: "Topcer ERP System",
+        image: "/topcererp.png",
+        stack: "Php | PHPRunner ",
+        description: "Topcer Textile is known for its fabric manufacturing and 2 or 3 pieces unhitched suits...",
+        link: "https://topcer.qerpapp.com/"
     }
 ]
 
